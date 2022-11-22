@@ -1,0 +1,152 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+header{
+	background: #BBBBBB;
+	padding: 20px 0;
+}
+
+.caixa-div{
+	width: 940px;
+	position: relative;
+	margin: 0 auto;
+}
+
+nav{
+position: absolute;
+top: 110px;
+right: 0px;
+}
+
+nav li{
+	display: inline;
+	margin: 0 0 0 18px;
+}
+
+nav li a:hover{
+	color: #D4D46F;
+	text-decoration: underline;
+	font-size: calc(22px - 1.3px);
+	transition: 1s;
+
+}
+
+nav a{
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+main{
+	width: 940px;
+	position: relative;
+	margin: 0 auto;
+}
+
+
+ form{
+	width: 940px;
+	position: relative;
+	margin: 50px auto;
+}
+
+form{
+	margin: 40px 0;
+
+}
+
+form label, form p, legend{
+	display: block;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.input-padrao{
+	display: block;
+	margin-bottom: 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+.checkbox{
+	margin: 20px 0;
+
+}
+
+
+footer{
+	text-align: center;
+	background: url("bg.jpg");
+	padding: 40px 0;
+}
+
+.copy{
+	color: white;
+	font-size: 15px;
+	margin-top: 20px;
+}
+
+.enviar{
+	width: 40%;
+	padding: 15px 0;
+	background: darkorange;
+	font-weight: bold;
+	color: white;
+	font-size: 18px;
+	border: none;
+	border-radius: 7px;
+	transition: 0.4s all;
+	cursor: pointer;
+}
+
+.enviar:hover{
+	background: darkgoldenrod;
+	transform: scale(1.05);
+}
+
+table{
+	margin: 20px 0 40px;
+}
+
+thead{
+	background: #555555;
+	font-weight: bold;
+	color: white;
+}
+td, th{
+	border: 2px solid #000000 ;
+	padding: 8px 15px;
+}
+
+/* css para celular */
+
+@media screen and (max-width: 480px){
+
+	.caixa-div, .main, .formu, .enviar{
+		width: auto;
+	}
+
+	h1{
+		text-align: center;
+	}
+
+	nav{
+		position: static;
+	}
+
+	.formu{
+		margin: 15px 0px 15px 5px;
+	}
+
+	.enviar{
+
+	}
+
+	table{
+		margin: 15px 0px 15px 5px;
+	}
+
+}

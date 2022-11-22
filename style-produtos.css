@@ -1,0 +1,128 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+header{
+	background: #BBBBBB;
+	padding: 20px 0;
+}
+
+.caixa-divi{
+	width: 940px;
+	position: relative;
+	margin: 0 auto;
+}
+
+nav{
+position: absolute;
+top: 110px;
+right: 0px;
+}
+
+nav li{
+	display: inline;
+	margin: 0 0 0 18px;
+}
+
+nav li a:hover{
+	color: #D4D46F;
+	text-decoration: underline;
+	font-size: calc(22px - 1.3px);
+	transition: 1s;
+
+}
+
+nav a{
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+/* css da página de produtos */
+
+.produtoss{
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.produtoss li{
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px;
+}
+
+.produtoss li:hover{
+	border: 3px solid #D4D46F;
+}
+
+.produtoss li:hover h2 {
+	font-size: 32px;
+	transition: 0.8;
+}
+
+.produtoss h2{
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.produto-descricao{
+
+	font-size: 18px;
+
+}
+
+.produto-preco{
+	font-size: 22px;
+	font-weight: bold;
+	margin: 10px 0 0;
+}
+
+footer{
+	text-align: center;
+	background: url("bg.jpg");
+	padding: 40px 0;
+}
+
+.copy{
+	color: white;
+	font-size: 15px;
+	margin-top: 20px;
+}
+
+/* celular */
+
+@media screen and (max-width: 480px){
+	.caixa-divi, .ul-div, .produtoss{
+		width: auto;
+	}
+
+	h1{
+		text-align: center;
+	}
+	nav{
+		position: static;
+	}
+
+	.produtoss{
+	}
+
+	.produtoss li{
+		width: 97%;
+		text-align: center;
+		margin: 0.5em 0.5em 0.5em 0.3em;
+
+	}
+
+	.imagem-cortes{
+		width: 100%;
+	}
+}
